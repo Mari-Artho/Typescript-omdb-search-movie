@@ -6,7 +6,10 @@ function printGalaxy() {
     //Get data from API.
     fetch("http://www.omdbapi.com/?i=tt3896198&apikey=453d560a")
         .then(function (response) { return response.json(); })
-        .then(function (movie) { return document.getElementById("title").innerHTML = movie.Title; })["catch"](function (error) {
+        .then(function (movie) {
+        document.getElementById("title").innerText = movie.Title;
+        document.getElementById("director").innerText = "Director is " + movie.Director;
+    })["catch"](function (error) {
         console.error('Error:', error);
     });
 }

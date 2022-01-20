@@ -17,6 +17,5 @@ function getOMDBData() {
         document.getElementById("director").innerText = "Director is " + movie.Director;
     })["catch"](function (error) {
         console.error('Error:', error);
-        return null;
     });
 }

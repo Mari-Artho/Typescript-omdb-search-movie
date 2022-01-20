@@ -1,13 +1,13 @@
 export interface iService {
-    getData(): any;
+    getData(): void;
 }
 
 export class Service implements iService {
-    getData(): any { getOMDBData(); }
+    getData(): void { getOMDBData(); }
     constructor() {}
 }
 
-function getOMDBData(): any {
+function getOMDBData(): void {
     //Get data from API.
     fetch("http://www.omdbapi.com/?i=tt3896198&apikey=453d560a")
       .then(response => response.json())
@@ -17,7 +17,6 @@ function getOMDBData(): any {
       })
       .catch((error) => {
         console.error('Error:', error);
-        return null;
       }
       );
   }

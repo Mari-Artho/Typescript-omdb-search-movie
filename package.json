@@ -1,0 +1,23 @@
+{
+  "name": "typescript-omdb",
+  "version": "1.0.0",
+  "description": "Typescript-ombd",
+  "main": "index.js",
+  "scripts": {
+    "dev":"parcel src/index.html",
+    "build":"parcel src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mari-Artho/Typescript-omdb.git"
+  },
+  "author": "\"\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mari-Artho/Typescript-omdb/issues"
+  },
+  "homepage": "https://github.com/Mari-Artho/Typescript-omdb#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}

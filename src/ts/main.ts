@@ -1,10 +1,7 @@
 import { iService, Service } from "./models/iService";
 
-//たけさとがiPadを１人ずつ使いたいから、newを作るみたいな感じだよー。
+// create new service instance to be used here by main.ts
 let service: iService = new Service;
-
-//service.getData(logData);
-//service.getData(useData);
 
 function logData(movieInfo: { Title: string; Director: string; Year: string; Poster:string; }): void{
   console.log(`Title: ${movieInfo.Title}, director: ${movieInfo.Director}, year: ${movieInfo.Year}, poster: ${movieInfo.Poster}`);

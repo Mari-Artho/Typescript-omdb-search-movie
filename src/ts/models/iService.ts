@@ -18,7 +18,7 @@ function getOMDBData(useData): void {
     //Get data from API.
     fetch("http://www.omdbapi.com/?i=tt3896198&apikey=453d560a")
       .then(response => response.json())
-      //⇩これがmap()関数だよー。
+      // the map function is below
       .then(movieInfo => useData(movieInfo))
       .catch((error) => {
         console.error('Error:', error);
@@ -30,7 +30,7 @@ function getOMDBData(useData): void {
     //Get data from API.
     fetch("http://www.omdbapi.com/?t=" + encodeURIComponent(title) + "&apikey=453d560a")
       .then(response => response.json())
-      //⇩これがmap()関数だよー。
+      // the map function is below
       .then(movieInfo => useData(movieInfo))
       .catch((error) => {
         console.error('Error:', error);

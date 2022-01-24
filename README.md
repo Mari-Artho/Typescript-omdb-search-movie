@@ -5,5 +5,5 @@ When the user enters the title of the movie, the movie information and poster ar
 
 Open with　http://localhost:1234
 
-Since I used parcel, user can't search on the live server or locally.
+Since I used parcel, user can't search movie on the live server or locally.
 

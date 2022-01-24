@@ -18,32 +18,9 @@ function useData(movieInfo: { Title: string; Director: string; Year: string;Post
   //show movie's year
   document.getElementById("year").innerText = movieInfo.Year;
   // //show poster image
-  // let imgElement = document.createElement("img");
-   let showImg =  movieInfo.Poster;
-  // //var url = showImg.createObjectURL(images);
-  //  console.log(showImg);
-  // imgElement.src = showImg;
+  let showImg =  movieInfo.Poster;
   let imgPoster = document.getElementById("imgPoster");
-  imgPoster.append = showImg
-}
-
-
-  //from project
-  // async function ReadAPI(url): Promise<any> {
-  //   let response = await fetch(url);
-  //   let data = await response.json();
-  //   return data;
-  // }
-
-  // async function readMovieAync(movieInfo) {
-  //   let imgUrl = movieInfo.Poster;
-  //   let m = await ReadAPI(imgUrl);
-
-  //   let poster = document.createElement("img");
-  //   let showImg =  movieInfo.Poster;
-  //   poster.src=showImg;
-  //   const yearNode = document.getElementById("year");
-  //   yearNode.appendChild(poster);
+  imgPoster.setAttribute("src", showImg);
 }
 
 

@@ -193,14 +193,10 @@ function useData(movieInfo) {
   document.getElementById("director").innerText = "Director is " + movieInfo.Director; //show movie's year
 
   document.getElementById("year").innerText = movieInfo.Year; // //show poster image
-  // let imgElement = document.createElement("img");
 
-  var showImg = movieInfo.Poster; // //var url = showImg.createObjectURL(images);
-  //  console.log(showImg);
-  // imgElement.src = showImg;
-
+  var showImg = movieInfo.Poster;
   var imgPoster = document.getElementById("imgPoster");
-  imgPoster.append = showImg;
+  imgPoster.setAttribute("src", showImg);
 }
 
 function search() {
@@ -237,7 +233,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55144" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57657" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
